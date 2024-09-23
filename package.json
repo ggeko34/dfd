@@ -13,7 +13,7 @@
         "jquery": "^3.7.1",
         "jquery-ui": "^1.13.2",
         "jscroll": "^2.4.1",
-        "jsdom": "^24.0.0",
+        "jsdom": "^25.0.1",
         "swiper": "^11.0.5"
     },
     "devDependencies": {
