@@ -41,14 +41,15 @@
         install-git-lfs = "git lfs install";
         pull-LF = "git lfs pull";
         put-env = "cat .env.example > .env";
-        venv = "python -m venv .venv";
+        # venv = "python -m venv .venv";
+        setup = "python -m venv .venv && sleep 2 && bash -c '. .venv/bin/activate && sleep 4 && pip install -r requirements.txt'";
       };
       # Runs when the workspace is (re)started
       onStart = {
         # Example: start a background task
         pull = "git pull";
         pull-LF = "git lfs pull";
-        setup = "sleep 2 && . .venv/bin/activate && sleep 5 && pip install -r requirements.txt";
+        # setup = "python -m venv .venv && sleep 2 && . .venv/bin/activate && sleep 5 && pip install -r requirements.txt";
       };
     };
   };
