@@ -38,12 +38,11 @@
       # Runs when a workspace is first created
       onCreate = {
         # SETUP: Create the environment when created the workspace
-        venv = "python -m venv .venv";
         install-git-lfs = "git lfs install";
         pull-LF = "git lfs pull";
         put-env = "cat .env.example > .env";
-        source = "source .venv/bin/activate";
-        pip-package = "pip install -r requirements.txt";
+        venv = "python -m venv .venv";
+        setup = "sleep 3 && source .venv/bin/activate && sleep 5 && pip install -r requirements.txt";
       };
       # Runs when the workspace is (re)started
       onStart = {
