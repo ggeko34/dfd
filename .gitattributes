@@ -1,0 +1,5 @@
+# Prompt Python files
+**/*[-._]prompt.py linguist-language=Prompt linguist-detectable=true linguist-diff=python
+
+# Prompt JSON files
+**/*[-._]prompt.json linguist-language=Prompt linguist-detectable=true linguist-diff=json
